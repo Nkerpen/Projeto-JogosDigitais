@@ -1,24 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    font-family: Montserrat;
     background: #161616;
 }
 
 .topo{
-    display: flex;
-    position: absolute;
-    top: 0px;
-    width: 80%;
-    height: 49%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 60vh;
     background-image: url(../img/Jogos_Digitais.png);
     background-size: 100%;
 }
@@ -29,11 +27,12 @@ body{
     justify-content: center;
     list-style-type: none;
     background: rgb(14, 13, 13);
-    width: 80%;
-    position: relative;
+    width: 100%;
+    position: sticky;
 }
 
 .nav_item{
+    font-family: Montserrat;
     margin: 0 15px;
 }
 
@@ -190,7 +189,7 @@ body{
     display: flex;
     font-weight: 500;
     font-size: 24px;
-    color: rgb(142, 10, 186);
+    color: rgb(145, 10, 186);
     position: relative;
     padding:  5px 0;
     overflow: hidden;
@@ -206,7 +205,7 @@ body{
     right: 100%;
     width: 50%;
     height: 2px;
-    background: rgb(142, 10, 186);
+    background: rgb(145, 10, 186);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -217,12 +216,12 @@ body{
     left: 100%;
     width: 50%;
     height: 2px;
-    background: rgb(142, 10, 186);
+    background: rgb(145, 10, 186);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav_link4:hover{
-    color: rgb(142, 10, 186);
+    color: rgb(145, 10, 186);
 }
 
 .nav_link4:hover::before{
@@ -231,4 +230,194 @@ body{
 
 .nav_link4:hover::after{
     left: 0;
+}
+
+
+.nav_link5{
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(186, 10, 10);
+    position: relative;
+    padding:  5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.nav_link5::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: rgb(186, 10, 10);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav_link5::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: rgb(186, 10, 10);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav_link5:hover{
+    color: rgb(186, 10, 10);
+}
+
+.nav_link5:hover::before{
+    right: 0;
+}
+
+.nav_link5:hover::after{
+    left: 0;
+}
+
+.sobre_title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Montserrat;
+    color: rgb(22, 161, 225);
+    background: #0f0f0f8e;
+    top: 50px;
+    margin: 0px 300px;
+    position: relative;
+}
+
+section{
+    position: relative;
+}
+
+.sobre{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+.secao_sobre{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    background: #0f0f0f8e;
+    position: relative;
+    margin: 0px 300px;
+}
+
+.grade_curricular{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+.grade_title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Montserrat;
+    color: rgb(22, 161, 225);
+    background: #0f0f0f8e;
+    top: 50px;
+    margin: 0px 300px;
+    position: relative;
+}
+
+.secao_grade1{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50px;
+    background: #0f0f0f8e;
+    position: relative;
+    margin: 0px 300px;
+}
+
+.secao_grade1{
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    top: 50px;
+    background: #0f0f0f8e;
+    position: relative;
+    margin: 0px 300px;
+}
+
+.secao_grade2{
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    top: 50px;
+    background: #0f0f0f8e;
+    position: relative;
+    margin: 0px 300px;
+    padding: 0px 300px;
+}
+
+
+.inst{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+.secao_inst{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    background: #0f0f0f8e;
+    position: relative;
+    margin: 0px 300px;
+}
+
+.inst_title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Montserrat;
+    color: rgb(19, 199, 15);
+    background: #0f0f0f8e;
+    top: 50px;
+    margin: 0px 300px;
+    position: relative;
+}
+
+#sobre{
+    cursor: pointer;
+
+}
+
+#inst{
+    cursor: pointer;
 }
