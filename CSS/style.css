@@ -34,7 +34,7 @@ body{
 }
 
 .nav_item{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     margin: 0 15px;
 }
 
@@ -85,9 +85,6 @@ body{
     left: 0;
 }
 
-
-
-
 .nav_link2{
     display: flex;
     font-weight: 500;
@@ -134,9 +131,6 @@ body{
 .nav_link2:hover::after{
     left: 0;
 }
-
-
-
 
 .nav_link3{
     display: flex;
@@ -185,8 +179,6 @@ body{
     left: 0;
 }
 
-
-
 .nav_link4{
     display: flex;
     font-weight: 500;
@@ -233,7 +225,6 @@ body{
 .nav_link4:hover::after{
     left: 0;
 }
-
 
 .nav_link5{
     display: flex;
@@ -333,7 +324,7 @@ body{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(22, 161, 225);
     background: #0f0f0f8e;
     top: 50px;
@@ -354,7 +345,7 @@ section{
 
 .secao_sobre{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -376,7 +367,7 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(22, 161, 225);
     background: #0f0f0f8e;
     top: 50px;
@@ -386,7 +377,7 @@ section{
 
 .secao_grade1{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: left;
@@ -398,11 +389,10 @@ section{
     margin: 0px 300px;
 }
 
-
 .secao_grade2{
     font-style: italic;
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: left;
@@ -433,7 +423,7 @@ section{
 
 .secao_inst{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -448,11 +438,188 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(19, 199, 15);
     background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
+    position: relative;
+}
+
+
+.facul{
+    position: relative;
+    justify-content: space-between;    
+}
+
+.fundo{
+    position: relative;
+    display: flexbox;
+    justify-items: center;
+    background-color: #0f0f0fda;
+    margin: 0;
+}
+
+.fundo2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f0f0fda;
+    margin: 0;
+}
+
+.fundo #anhanguera{
+    width: 125px;
+    height: 125px;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fundo #cruzeiroead{
+    width: 250px;
+    height: 100px;
+
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fundo #UNICID{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    position: relative;
+}
+
+.fundo #UNIFRAM{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    position: relative;
+}
+
+.fundo #UNOPAR{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    position: relative;
+}
+
+.fundo #UNIBTA{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    position: relative;
+}
+
+.fundo2 #FATECAM{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+    position: relative;
+}
+
+.fundo2 #IFRJ{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    position: relative;
+}
+
+.fundo2 #FATECLINS{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    position: relative;
+}
+
+#anhanguera:hover{
+    opacity: 1;
+}
+
+#cruzeiroead:hover{
+    opacity: 1;
+}
+
+#UNICID:hover{
+    opacity: 1;
+}
+
+#UNIFRAM:hover{
+    opacity: 1;
+}
+
+#UNOPAR:hover{
+    opacity: 1;
+}
+
+#UNIBTA:hover{
+    opacity: 1;
+}
+
+#FATECAM:hover{
+    opacity: 1;
+}
+
+#IFRJ:hover{
+    opacity: 1;
+}
+
+#FATECLINS:hover{
+    opacity: 1;
+}
+
+.privadas{
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(19, 199, 15);
+    justify-content: center;
+    margin: 0px 30px;
+    position: relative;
+}
+
+.publicas{
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(19, 199, 15);
+    justify-content: center;
+    margin: 0px 30px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -465,7 +632,7 @@ section{
 
 .secao_cert{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -480,7 +647,7 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(240, 144, 20);
     background: #0f0f0f8e;
     top: 50px;
@@ -497,7 +664,7 @@ section{
 
 .secao_posgrad{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -512,7 +679,7 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(19, 65, 215);
     background: #0f0f0f8e;
     top: 50px;
@@ -529,7 +696,7 @@ section{
 
 .secao_merctrab{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -544,11 +711,21 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;;
     color: rgb(129, 4, 196) ;
     background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
+    position: relative;
+}
+
+.entrevista{
+    background-color: #000;
+    border: #fff;
+    height: 300px;
+    width: 350px;
+    justify-content: right;
+    text-align: center;
     position: relative;
 }
 
@@ -561,7 +738,7 @@ section{
 
 .secao_cuid{
     font-size: 20px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
@@ -576,7 +753,7 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     color: rgb(186, 10, 10);
     background: #0f0f0f8e;
     top: 50px;
@@ -618,7 +795,6 @@ section{
     background-color: #0000009c;
     bottom: 0;
 }
-
 
 .footer .social{
     text-align: center;
