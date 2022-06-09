@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&family=Play&family=Source+Sans+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Play&family=Source+Sans+Pro:wght@300&display=swap');
 
 *{
@@ -11,7 +11,12 @@
 
 body{
     min-height: 100vh;
-    background: #161616;
+}
+
+h1{
+    margin: 0;
+    z-index: +3;
+    color: #fff;
 }
 
 .topo{
@@ -19,30 +24,50 @@ body{
     top: 0;
     width: 100%;
     height: 60vh;
-    background-image: url(../img/Jogos_Digitais.png);
+    background-repeat: no-repeat;
+    background-image: url(../img/topo.png);
+    background-position: center center;
     background-size: 100%;
+    z-index: +1;
 }
 
-.nav{
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: +2;
+}
+
+header{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+    border-color: rgb(0, 0, 0);
+}
+
+header .nav{
     display: flex;
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    background: rgb(14, 13, 13);
-    width: 100%;
     position: sticky;
+    top: 0;
+    background: rgb(0, 0, 0);
+
 }
 
-.nav_item{
-    font-family: 'Play', sans-serif;
+header .nav_item{
+    font-family: 'Open Sans', sans-serif;
     margin: 0 15px;
 }
 
-.nav_link1{
+header .nav_link{
     display: flex;
     font-weight: 500;
     font-size: 24px;
-    color: rgb(22, 161, 225);
+    color: rgb(255, 255, 255);
     position: relative;
     padding:  5px 0;
     overflow: hidden;
@@ -51,272 +76,37 @@ body{
     transition: .3s;
 }
 
-.nav_link1::before{
+header .nav_link::before{
     content: '';
     position: absolute;
     top: 0px;
     right: 100%;
     width: 50%;
     height: 2px;
-    background: rgb(22, 161, 225);
+    background: rgb(255, 255, 255);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.nav_link1::after{
+header .nav_link::after{
     content: '';
     position: absolute;
     bottom: 0px;
     left: 100%;
     width: 50%;
     height: 2px;
-    background: rgb(22, 161, 225);
+    background: rgb(255, 255, 255);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.nav_link1:hover{
-    color: rgb(22, 161, 225);
+header .nav_link:hover{
+    color: rgb(255, 255, 255);
 }
 
-.nav_link1:hover::before{
+header .nav_link:hover::before{
     right: 0;
 }
 
-.nav_link1:hover::after{
-    left: 0;
-}
-
-.nav_link2{
-    display: flex;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(19, 199, 15);
-    position: relative;
-    padding:  5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav_link2::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(19, 199, 15);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link2::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(19, 199, 15);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link2:hover{
-    color: rgb(19, 199, 15);
-}
-
-.nav_link2:hover::before{
-    right: 0;
-}
-
-.nav_link2:hover::after{
-    left: 0;
-}
-
-.nav_link3{
-    display: flex;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(240, 144, 20);
-    position: relative;
-    padding:  5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav_link3::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(231, 152, 15);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link3::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(231, 152, 15);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link3:hover{
-    color: rgb(231, 152, 15);
-}
-
-.nav_link3:hover::before{
-    right: 0;
-}
-
-.nav_link3:hover::after{
-    left: 0;
-}
-
-.nav_link4{
-    display: flex;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(19, 65, 215);
-    position: relative;
-    padding:  5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav_link4::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(19, 65, 215);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link4::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(19, 65, 215);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link4:hover{
-    color: rgb(19, 65, 215);
-}
-
-.nav_link4:hover::before{
-    right: 0;
-}
-
-.nav_link4:hover::after{
-    left: 0;
-}
-
-.nav_link5{
-    display: flex;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(129, 4, 196);
-    position: relative;
-    padding:  5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav_link5::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(129, 4, 196);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link5::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(129, 4, 196);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link5:hover{
-    color: rgb(129, 4, 196);
-}
-
-.nav_link5:hover::before{
-    right: 0;
-}
-
-.nav_link5:hover::after{
-    left: 0;
-}
-
-.nav_link6{
-    display: flex;
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(186, 10, 10);
-    position: relative;
-    padding:  5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav_link6::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(186, 10, 10);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link6::after{
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: rgb(186, 10, 10);
-    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav_link6:hover{
-    color: rgb(186, 10, 10);
-}
-
-.nav_link6:hover::before{
-    right: 0;
-}
-
-.nav_link6:hover::after{
+header .nav_link:hover::after{
     left: 0;
 }
 
@@ -324,9 +114,8 @@ body{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(22, 161, 225);
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
     position: relative;
@@ -338,38 +127,28 @@ section{
 
 .sobre{
     position: relative;
-    height: 110hv;
-    width: 100%;
-    padding: 0px ;
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
 }
 
-.secao_sobre{
+.sobre .secao_sobre{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
-    top: 50px;
-    background: #0f0f0f8e;
-    position: relative;
-    margin: 0px 300px;
+
 }
 
-.grade_curricular{
-    position: relative;
-    height: 110hv;
-    width: 100%;
-    padding: 0px;
-}
+
 
 .grade_title{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(22, 161, 225);
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
     position: relative;
@@ -377,41 +156,31 @@ section{
 
 .secao_grade1{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
     align-items: left;
     justify-content: left;
     text-align: left;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
+
 
 .secao_grade2{
     font-style: italic;
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
     align-items: left;
     justify-content: left;
     text-align: left;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
     padding: 0px 50px;
-}
-
-.img_grade{
-    background-image: url(../img/amogus.png);
-}
-
-.img_grade2{
-    background-size: cover;
-    background-image: url(../img/homiDeFerro3D.png);
 }
 
 .inst{
@@ -423,13 +192,13 @@ section{
 
 .secao_inst{
     font-size: 20px;
+ 
     font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
@@ -446,7 +215,6 @@ section{
     position: relative;
 }
 
-
 .facul{
     position: relative;
     justify-content: space-between;    
@@ -454,9 +222,9 @@ section{
 
 .fundo{
     position: relative;
-    display: flexbox;
+    display: flex;
     justify-items: center;
-    background-color: #0f0f0fda;
+    background-color: #1d1d1dda;
     margin: 0;
 }
 
@@ -464,7 +232,7 @@ section{
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: #0f0f0fda;
+    background-color: #1d1d1dda;    
     margin: 0;
 }
 
@@ -632,13 +400,12 @@ section{
 
 .secao_cert{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
@@ -647,9 +414,8 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(240, 144, 20);
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
     position: relative;
@@ -664,13 +430,12 @@ section{
 
 .secao_posgrad{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
@@ -679,9 +444,8 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(19, 65, 215);
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
     position: relative;
@@ -696,13 +460,12 @@ section{
 
 .secao_merctrab{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
@@ -711,21 +474,10 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(129, 4, 196) ;
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
-    position: relative;
-}
-
-.entrevista{
-    background-color: #000;
-    border: #fff;
-    height: 300px;
-    width: 350px;
-    justify-content: right;
-    text-align: center;
     position: relative;
 }
 
@@ -738,13 +490,12 @@ section{
 
 .secao_cuid{
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
     align-items: center;
     justify-content: center;
     top: 50px;
-    background: #0f0f0f8e;
     position: relative;
     margin: 0px 300px;
 }
@@ -753,9 +504,8 @@ section{
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: rgb(186, 10, 10);
-    background: #0f0f0f8e;
     top: 50px;
     margin: 0px 300px;
     position: relative;
@@ -792,9 +542,10 @@ section{
 
 .footer{
     padding: 40px 0;
-    background-color: #0000009c;
+    background-color: #000000;
     bottom: 0;
 }
+
 
 .footer .social{
     text-align: center;
