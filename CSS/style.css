@@ -11,7 +11,7 @@
 
 body{
     min-height: 100vh;
-    background: rgb(255, 255, 255);
+    background: rgb(225, 224, 224);
 }
 
 .topo{
@@ -25,18 +25,7 @@ body{
     background-size: 100%;
     z-index: +1;
 }
-/*
-.sombra{
-    background-color: #000000;
-    width: 700px;
-    height: 1000px;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 1%;
-    z-index: +3;
-    position: absolute;
-}
-*/
+
 .JD{
     font-size: 40px;
     font-family:'Source Sans Pro', sans-serif;
@@ -58,15 +47,11 @@ body{
 }
 
 .titulo .sobretitulo{
-    color: rgb(22, 161, 225);
+    color: rgb(22, 52, 225);
 }
 
 .titulo .gradetitulo{
-    color: rgb(22, 161, 225);
-}
-
-.titulo .institulo{
-
+    color: rgb(22, 52, 225);
 }
 
 header{
@@ -86,7 +71,6 @@ header .nav{
     position: sticky;
     top: 0;
     background: rgb(0, 0, 0);
-
 }
 
 header .nav_item{
@@ -166,7 +150,7 @@ header .certitem .nav_link::after{
 }
 
 header .positem .nav_link::after{
-    background: rgb(200, 212, 25);
+    background: rgb(231, 239, 0);
 }
 
 header .mercitem .nav_link::after{
@@ -186,23 +170,23 @@ header .sobreitem .nav_link:hover{
 }
 
 header .institem .nav_link:hover{
-    background: rgb(22, 151, 225);
+    color: rgb(22, 151, 225);
 }
 
-header .certitem .nav_link::before{
-    background: rgb(22, 225, 107);
+header .certitem .nav_link:hover{
+    color: rgb(22, 225, 107);
 }
 
-header .positem .nav_link::before{
-    background: rgb(200, 212, 25);
+header .positem .nav_link:hover{
+    color: rgb(231, 239, 0);
 }
 
-header .mercitem .nav_link::before{
-    background: rgb(225, 154, 22);
+header .mercitem .nav_link:hover{
+    color: rgb(225, 154, 22);
 }
 
-header .cuiditem .nav_link::before{
-    background: rgb(190, 10, 10);
+header .cuiditem .nav_link:hover{
+    color: rgb(190, 10, 10);
 }
 
 header .nav_link:hover::before{
@@ -213,20 +197,17 @@ header .nav_link:hover::after{
     left: 0;
 }                
 
-
- 
-
 section{
     position: relative;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 3%;
+    padding-top: 1%;
     height: 100%;
 }
 
 section .sobre{
     background-color: rgb(0, 0, 0);
-    border: rgb(22, 161, 225);
+    border: rgb(22, 52, 225);
     border-style: solid;
 }
 
@@ -244,113 +225,168 @@ section .sobre .secao{
     width: 100%;
     padding: 0px ;
 }
- 
-.facul{
+
+.titulo .institulo{
+    color:  rgb(22, 151, 225);
+ } 
+
+ .privtitulo{
+    font-size: 35px;
+    color:  rgb(22, 151, 225);
+ }
+
+ .publititulo{
+    font-size: 35px;
+    color:  rgb(22, 151, 225);
+ }
+
+ section .inst{
+    background-color: rgb(0, 0, 0);
+    border: rgb(22, 151, 225);
+    border-style: solid;
+}
+
+section .inst .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+section .facul{
     position: relative;
-    justify-content: space-between;    
-}
-
-.facul .fundo{
-    display: flex;
-    justify-items: center;
-    background-color: #1d1d1dda;
-    margin: 0;
-}
-
-.facul .fundo2{
-    display: flex;
     justify-content: space-between;
-    background-color: #1d1d1dda;    
-    margin: 0;
+}
+
+.fotosection{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: inline-flex;
+}
+
+.fotosection2{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: inline-flex;
+}
+
+.fundo{
+    background-color: rgb(194, 194, 194);
+    border: rgb(22, 151, 225);
+    border-style: double;
+    border-radius: 50%;
+    width: 15%;
+    height: 150px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.fundo2{
+    background-color: rgb(194, 194, 194);
+    border: rgb(22, 151, 225);
+    border-style: double;
+    border-radius: 50%;
+    width: 20%;
+    height: 200px;
+    margin-left: 115px;
 }
 
 .fundo #anhanguera{
-    width: 125px;
-    height: 125px;
-    margin-left: 10px;
-    margin-top: 20px;
+    position: relative;
+    width: 100px;
+    height: 100px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    margin: 20px;
 }
 
 .fundo #cruzeiroead{
-    width: 250px;
-    height: 100px;
+    position: relative;
+    top: 30px;
+    width: 145px;
+    height: 75px;
     opacity: 0.6;
+
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .fundo #UNICID{
-    width: 200px;
-    height: 100px;
-    margin: 10px;
+    position: relative;
+    top: 20%;
+    width: 150px;
+    height: 75px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
 }
 
 .fundo #UNIFRAM{
-    width: 200px;
-    height: 100px;
-    margin: 10px;
+    position: relative;
+    top: 22%;
+    width: 150px;
+    height: 75px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 10px;
 }
 
 .fundo #UNOPAR{
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    opacity: 0.6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 75px;
-}
-
-.fundo #UNIBTA{
-    width: 200px;
-    height: 150px;
-    margin: 10px;
-    opacity: 0.6;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 100px;
-}
-
-.fundo2 #FATECAM{
-    width: 200px;
-    height: 100px;
-    margin: 10px;
+    position: relative;
+    top: 25%;
+    width: 100px;
+    height: 75px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 30px;
 }
 
-.fundo2 #IFRJ{
-    width: 150px;
+.fundo #UNIBTA{
+    position: relative;
+    width: 200px;
     height: 150px;
-    margin: 10px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 0px;
+    margin-left: -16px;
+}
+
+.fundo2 #FATECAM{
+    position: relative;
+    top: 22%;
+    width: 200px;
+    height: 100px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.fundo2 #IFRJ{
+    position: relative;
+    top: 10%;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 39px;
 }
 
 .fundo2 #FATECLINS{
+    position: relative;
+    top: 20%;
     width: 200px;
-    height: 150px;
-    margin: 10px;
+    height: 125px;
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 0px;
+    margin-left: 20px;
 }
 
 #anhanguera:hover{
@@ -396,17 +432,24 @@ section .sobre .secao{
     padding: 0px ;
 }
 
-.secao_cert{
+section .cert{
+    background-color: rgb(0, 0, 0);
+    border: rgb(22, 225, 107);
+    border-style: solid;
+}
+
+section .cert .secao{
     font-size: 20px;
     font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    position: relative;
-    margin: 0px 300px;
+    margin: 100px;
 }
+
+.titulo .certitulo{
+    color: rgb(22, 225, 107);
+}
+
 
 .posgrad{
     position: relative;
@@ -415,16 +458,22 @@ section .sobre .secao{
     padding: 0px ;
 }
 
-.secao_posgrad{
+section .posgrad{
+    background-color: rgb(0, 0, 0);
+    border: rgb(200, 212, 25);
+    border-style: solid;
+}
+
+section .posgrad .secao{
     font-size: 20px;
     font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    position: relative;
-    margin: 0px 300px;
+    margin: 100px;
+}
+
+.titulo .postitulo{
+    color: rgb(200, 212, 25);
 }
 
 .merctrab{
@@ -434,16 +483,22 @@ section .sobre .secao{
     padding: 0px ;
 }
 
-.secao_merctrab{
+section .merctrab{
+    background-color: rgb(0, 0, 0);
+    border: rgb(225, 154, 22);
+    border-style: solid;
+}
+
+section .merctrab .secao{
     font-size: 20px;
     font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    position: relative;
-    margin: 0px 300px;
+    margin: 100px;
+}
+
+.titulo .merctitulo{
+    color: rgb(225, 154, 22);
 }
 
 .cuid{
@@ -453,21 +508,28 @@ section .sobre .secao{
     padding: 0px ;
 }
 
-.secao_cuid{
+section .cuid{
+    background-color: rgb(0, 0, 0);
+    border: rgb(190, 10, 10);
+    border-style: solid;
+}
+
+section .cuid .secao{
     font-size: 20px;
     font-family: 'Play', sans-serif;
     text-align: left;
     color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    position: relative;
-    margin: 0px 300px;
+    margin: 100px;
 }
+
+.titulo .cuidtitulo{
+    color: rgb(190, 10, 10);
+}
+
 
 .bolinha{
     justify-content: right;
-    color: rgb(22, 161, 225);
+    color: rgb(22, 52, 225);
 }
 
 #sobre{
